@@ -2,13 +2,22 @@ Front-end to display data from https://pokeapi.co/ calls are limited to 100 per 
 
 in progress project...
 
+#TODOS:
+
 []: make scaleable.
+
 []:fix overflow on left half of screen when resized.
+
 []:make search component reuseable.
+
 []:add animations.
+
 []:fix colours.
+
 []:start sprites on front facing sprite.
+
 []:fix bug where changing to new pokemon doesn't reset image index // NB if start on front facing may not be an issue.
+
 []:store the cache locally to reduce api calls and load from cookies on webpage load.
 
 
