@@ -1,3 +1,18 @@
+Front-end to display data from https://pokeapi.co/ calls are limited to 100 per hour for an ip adress at time of writing
+
+in progress project...
+
+[]: make scaleable
+[]:fix overflow on left half of screen when resized
+[]:make search component reuseable
+[]:add animations
+[]:fix colours
+[]:start sprites on front facing sprite
+[]:fix bug where changing to new pokemon doesn't reset image index // NB if start on front facing may not be an issue
+[]:store the cache locally to reduce api calls and load from cookies on webpage load
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
