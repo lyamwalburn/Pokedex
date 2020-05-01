@@ -1,0 +1,19 @@
+@import "./globalStyles/variables";
+
+.app {
+  background-color: $grey-06;
+  min-height: 100vh;
+
+  &__container {
+    width: 80%;
+    max-width: 900px;
+    min-height: 100vh;
+    margin: auto;
+    padding: 15px;
+    background-color: $white-01;
+  }
+
+  &__title {
+    color: $black-02;
+  }
+}

@@ -1,0 +1,150 @@
+@import "../globalStyles/variables";
+
+$topPDHeight: 150px;
+
+.pokedex {
+  display: flex;
+  align-items: flex-end;
+
+  &__camera {
+    height: 80px;
+    width: 80px;
+    background-color: $blue-01;
+    border: 8px solid $grey-05;
+    border-radius: 50%;
+  }
+
+  &__container {
+    height: 550px;
+    width: 50%;
+    border-radius: 8px;
+    display: flex;
+    flex-wrap: wrap;
+
+    background-color: $red-01;
+    &--right {
+      height: 450px;
+      padding: 20px;
+      align-items: center;
+      justify-content: center;
+      border-left: 4px solid $grey-03;
+    }
+  }
+
+  &__dot {
+    height: 25px;
+    width: 25px;
+    margin-right: 6px;
+    border-radius: 50%;
+    border: 2px solid $grey-02;
+
+    &--green {
+      background-color: $green-02;
+    }
+    &--red {
+      background-color: red;
+    }
+    &--yellow {
+      background-color: yellow;
+    }
+  }
+
+  &__image {
+    height: 250px;
+    width: 250px;
+    border: 4px solid $grey-04;
+    border-radius: 6px;
+    background-color: $black-02;
+  }
+
+  &__image-container {
+    width: 100%;
+    height: calc(100% - #{$topPDHeight});
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  &__button-container {
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    &--button {
+      height: 40px;
+      width: 60px;
+      background-color: $blue-02;
+      border: 2px solid $blue-04;
+      border-radius: 3px;
+      color: $white-02;
+    }
+  }
+
+  &__screen {
+    height: 100%;
+    width: 50%;
+    padding: 15px;
+    box-sizing: border-box;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: $green-01;
+    border-radius: 8px 0 0 8px;
+    &--right {
+      background-color: $green-01;
+      border-radius: 0 8px 8px 0;
+      overflow: scroll;
+      overflow-x: hidden;
+
+      &::-webkit-scrollbar {
+        width: 5px;
+      }
+      &::-webkit-scrollbar-thumb {
+        background-color: $green-03;
+        border-radius: 5px;
+      }
+      &::-webkit-scrollbar-track {
+        background-color: $green-04;
+        border-radius: 5px;
+      }
+    }
+  }
+
+  &__screen-key {
+    margin-right: 8px;
+    font-weight: bold;
+  }
+
+  &__screen-row {
+    margin-bottom: 5px;
+  }
+
+  &__screen-title {
+    margin-top: 0;
+    margin-bottom: 12px;
+    text-transform: capitalize;
+    font-size: 24px;
+  }
+
+  &__screen-value {
+    text-transform: capitalize;
+  }
+
+  &__top {
+    height: $topPDHeight;
+    width: 50%;
+    background-color: $red-02;
+    border-radius: 8px 0 8px 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &--right {
+      border-radius: 0 8px 0 0;
+      height: 80px;
+      justify-content: flex-start;
+    }
+  }
+}
